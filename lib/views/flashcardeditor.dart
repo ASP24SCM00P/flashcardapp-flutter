@@ -37,7 +37,7 @@ class _EditFlashcardScreenState extends State<EditFlashcardScreen> {
   DBHelper dbHelper = DBHelper();
   await dbHelper.deleteFlashcard(widget.flashcard.id);
 
-  // Return a result to the calling widget to indicate that a card was deleted.
+  
   Navigator.pop(context, true);
 }
 

@@ -35,10 +35,8 @@ class _AddDeckScreenState extends State<AddDeckScreen> {
                 if (title.isNotEmpty) {
                   DBHelper().insertDeck(title);
                   Navigator.of(context).pop(); 
-                  widget.reloadDecks();// Return to the previous screen
-                } else {
-                  // Show an error message or validation feedback.
-                }
+                  widget.reloadDecks();
+                } 
               },
               child: Text('Save'),
             ),

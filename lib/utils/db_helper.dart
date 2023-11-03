@@ -24,8 +24,6 @@ class DBHelper {
     var dbDir = await getApplicationDocumentsDirectory();
     var dbPath = path.join(dbDir.path, _databaseName);
 
-    // Uncomment this line to delete and recreate the database (for testing)
-    // await deleteDatabase(dbPath);
 
     var db = await openDatabase(
       dbPath,

@@ -56,7 +56,7 @@ class _QuizScreenState extends State<QuizScreen> {
         }
     });
   } else {
-    // Wrap around to the first card without incrementing viewedCardCount.
+   
     setState(() {
       currentIndex = 0;
       showingAnswer = false;
@@ -75,7 +75,7 @@ void showPreviousCard() {
         }
     });
   } else {
-    // Wrap around to the last card without incrementing viewedCardCount.
+   
     setState(() {
       currentIndex = flashcards.length - 1;
       showingAnswer = false;

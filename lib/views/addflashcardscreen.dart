@@ -39,10 +39,10 @@ class _AddFlashcardScreenState extends State<AddFlashcardScreen> {
                 final answer = answerController.text;
 
                 if (question.isNotEmpty && answer.isNotEmpty) {
-                  DBHelper().insertFlashcard(question, answer, widget.deckId); // Use widget.deckId
-                  Navigator.of(context).pop(); // Return to the previous screen
+                  DBHelper().insertFlashcard(question, answer, widget.deckId); 
+                  Navigator.of(context).pop(); 
                 } else {
-                  // Show an error message or validation feedback.
+                  
                 }
               },
               child: Text('Save'),

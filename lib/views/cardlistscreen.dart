@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mp3/models/flash_card.dart'; // Import your Flashcard model
+import 'package:mp3/models/flash_card.dart'; 
 import 'package:mp3/utils/db_helper.dart';
 import 'package:mp3/views/addflashcardscreen.dart';
 import 'package:mp3/views/flashcardeditor.dart';
@@ -74,7 +74,7 @@ void reloadCards() {
                 context,
                 MaterialPageRoute(
                   builder: (context) => QuizScreen(
-                      deckId: widget.deckId), // Pass the selected deck's ID
+                      deckId: widget.deckId), 
                 ),
               );
             },

@@ -30,7 +30,7 @@ class _DeckListState extends State<DeckList> {
       decks = loadedDecks.map((row) => Deck(
         id: row['id'] as int,
         title: row['title'] as String,
-        flashcards: [], // You may need to fetch flashcards as well
+        flashcards: [], 
       )).toList();
     });
   }
@@ -48,7 +48,7 @@ void reloadDecks() {
 
     if (jsonData != null) {
       final dbHelper = DBHelper();
-    //  await dbHelper.clearDatabase(); // Clear existing data
+   
 
       for (var jsonDeck in jsonData) {
         if (jsonDeck is Map) {
@@ -65,7 +65,7 @@ void reloadDecks() {
         }
       }
 
-      _loadDecks(); // Refresh the list of decks
+      _loadDecks(); 
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text('Data downloaded and processed.'),
       ));
