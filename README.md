@@ -22,13 +22,6 @@
 
 ---
 
-## 📺 Demo
-
-🔗 **[Live Demo](https://your-demo-link.com)** _(If available)_  
-📺 **[Watch Demo Video](https://youtu.be/v8jJSc1bre0?si=kZuwdqIJJ3mWf6ER)**  
-
----
-
 ## 🛠️ Installation & Setup
 
 ### **Prerequisites**
