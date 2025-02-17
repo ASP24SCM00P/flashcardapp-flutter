@@ -36,7 +36,7 @@ class _EditFlashcardScreenState extends State<EditFlashcardScreen> {
   void deleteFlashcard() async {
   DBHelper dbHelper = DBHelper();
   await dbHelper.deleteFlashcard(widget.flashcard.id);
-
+widget.reloadCards();
   
   Navigator.pop(context, true);
 }
